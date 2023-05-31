@@ -12,3 +12,4 @@ export 'src/hooked_bloc.dart';
 export 'src/mixins/bloc_action_mixin.dart';
 export 'src/bloc/action_bloc.dart';
 export 'src/bloc/action_cubit.dart';
+export 'src/bloc/test_utils/action_bloc_test.dart';

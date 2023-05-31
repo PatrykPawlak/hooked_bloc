@@ -37,6 +37,7 @@ use cases and reuse them, which makes writing widgets faster and easier.
   - [useBlocListener](#usebloclistener)
   - [useBlocComparativeListener](#usebloccomparativelistener)
   - [useActionListener](#useactionlistener)
+- [Unit Test with actionBlocTest](#unit-test-with-actionbloctest)
 - [Contribution](#contribution)
 
 ## Motivation
@@ -422,13 +423,20 @@ class MessageActionBloc extends ActionBloc<BuildState, BlocEvent, String>  {
 }
 ```
 
+## Unit Test with actionBlocTest
+
+### actionBlocTest
+
+`actionBlocTest` extends [`blocTest`](<https://pub.dev/packages/bloc_test#unit-test-with-bloctest>) and creates a new `ActionCubit` / `ActionBloc`-specific test case with the given `description`.\
+`actionBlocTest` will handle asserting that `ActionCubit` / `ActionBloc` dispatch the expected actions - `expectActions` (in order) after `act` is executed.
+
 ## Contribution
 
 We accept any contribution to the project!
 
 Suggestions of a new feature or fix should be created via pull-request or issue.
 
-### feature request:
+### feature request
 
 - Check if feature is already addressed or declined
 
